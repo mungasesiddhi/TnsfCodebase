@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VH24: Conflux of Fortun</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght=700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Vanguard Hub 24: Conflux of Fortune</h1>
+            <p class="subtitle">The Game Of Luck...</p>
+
+            <div class="game-rules">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li> Gather 4 players ready for some dice action!</li>
+                    <li> Click 'Roll the Dice!' to roll for everyone in each round.</li>
+                    <li> There are 5 exciting rounds.</li>
+                    <li> The player with the highest total score after 5 rounds wins!</li>
+                    <li> Good luck and have fun!</li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="game-board">
+            <div class="player-column left">
+                <div class="player-card" id="player1">
+                    <h2>Player 1</h2>
+                    <div class="dice-display">
+                        <div class="die" data-player="1"></div>
+                    </div>
+                    <p class="current-score">Score: <span class="score">0</span></p>
+                    <p class="last-roll-text">Last Roll: <span class="last-roll"></span></p>
+                </div>
+                <div class="player-card" id="player2">
+                    <h2>Player 2</h2>
+                    <div class="dice-display">
+                        <div class="die" data-player="2"></div>
+                    </div>
+                    <p class="current-score">Score: <span class="score">0</span></p>
+                    <p class="last-roll-text">Last Roll: <span class="last-roll"></span></p>
+                </div>
+            </div>
+
+            <div class="center-controls">
+                <div class="game-info">
+                    <p>Round: <span id="currentRound">1</span> / 5</p>
+                </div>
+                <button id="rollDiceBtn">Roll the Dice!</button>
+                <div id="gameMessage" class="game-message"></div>
+                <button id="resetGameBtn" class="reset-button" style="display: none;">Play Again</button>
+            </div>
+
+            <div class="player-column right">
+                <div class="player-card" id="player3">
+                    <h2>Player 3</h2>
+                    <div class="dice-display">
+                        <div class="die" data-player="3"></div>
+                    </div>
+                    <p class="current-score">Score: <span class="score">0</span></p>
+                    <p class="last-roll-text">Last Roll: <span class="last-roll"></span></p>
+                </div>
+                <div class="player-card" id="player4">
+                    <h2>Player 4</h2>
+                    <div class="dice-display">
+                        <div class="die" data-player="4"></div>
+                    </div>
+                    <p class="current-score">Score: <span class="score">0</span></p>
+                    <p class="last-roll-text">Last Roll: <span class="last-roll"></span></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Developed with 💜 by VH24 Studio's in New Delhi, India</p>
+            <p>&copy; 2025 VH24 Studio's. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
